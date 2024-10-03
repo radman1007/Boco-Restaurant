@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>BOCO - Multicusine Restaurant Theme</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Merriweather+Sans:400,700"
+        rel="stylesheet">
+
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- animate on scroll (aos) css-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon image -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+</head>
+
+<body>
+    <header class="header slideshow" data-scroll-index="0">
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="img/favicon.png" alt="logo" class="header-logo">
+                </a>
+                <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-scroll-nav="0">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-scroll-nav="1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" data-scroll-nav="2">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu" data-scroll-nav="3">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery" data-scroll-nav="4">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#chefs" data-scroll-nav="5">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-scroll-nav="6">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- header main-->
+            <div class="header__container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-10 col-sm-10 mx-auto align-self-center">
+                            <h1 class="heading-primary mb-5">BOCO Multicusine Restaurant</h1>
+                            <p class="paragraph">Donec ut diam auctor, pellentesque ante dapibus, aliquam ante.
+                                Donec in eros a
+                                felis dapibus pellentesque sit amet in ex.</p>
+                            <h2 class="heading-tertiary mb-5">Call Us <a href="#">+91 922414922414</a></h2>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-10 mx-auto">
+                            <!-- header form -->
+                            <form action="#" class="booking-form">
+                                <div class="form-group">
+                                    <input type="name" class="booking-form__input" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="phone" class="booking-form__input" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="booking-form__input" placeholder="date" id="date">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form__input" onclick="this.setAttribute('value', this.value);">
+                                        <option value=""></option>
+                                        <option value="">Lunch</option>
+                                        <option value="">Dinner</option>
+                                        <option value="">Barbecue (Only Dinner)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form__input" onclick="this.setAttribute('value', this.value);">
+                                        <option value=""></option>
+                                        <option value="">01</option>
+                                        <option value="">02</option>
+                                        <option value="">03</option>
+                                        <option value="">04</option>
+                                        <option value="">Above 4 upto 10</option>
+                                    </select>
+                                </div>
+                                <button class="btn-boco">Book Now</button>
+                            </form>
+                            <!-- end of header form -->
+                        </div>
+                    </div> <!-- end of row -->
+                </div><!-- end of container -->
+            </div>
+            <!-- end of header main -->
+            <div class="scrolldown">
+                <a href="#about" class="scroll-icon" data-scroll-nav="1">
+                    Scroll Down
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div><!-- end of scroll down -->
+        </div>
+    </header><!-- end of header section -->
+
+    <!-- go to top -->
+    <button onclick="topFunction()" id="gotop" title="Go to top"><span><i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </span></button>
+    <!-- end of go to top -->
+
+    <!-- about section -->
+    <section class="about section-padding" data-scroll-index="1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-10 mx-auto align-self-center">
+                    <h2 class="heading-primary">Welcome to Boco Restaurant</h2>
+                    <p class="paragraph">Nam semper egestas est eu lacinia. Duis venenatis neque libero, a ultrices urna
+                        interdum eget. Fusce augue elit, malesuada eu mauris vitae, gravida dignissim purus.</p>
+                    <p class="paragraph">Donec ut diam auctor, pellentesque ante dapibus, aliquam ante. Donec in eros a
+                        felis dapibus pellentesque sit amet in ex. Nam varius mauris ut tincidunt ultricies.</p>
+
+                    <button class="btn-boco">Read More</button>
+                </div>
+                <div class="col-md-6 col-sm-10 mx-auto">
+                    <img src="img/dining-01.png" alt="about section text" class="about__img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about section -->
+    <!-- services section -->
+    <section class="services section-padding" data-scroll-index="2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-sm-10 mx-auto text-center">
+                    <div class="services__content">
+                        <h2 class="heading-primary">Our Services</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <div class="services__icon">
+                        <img src="img/icon-01.png" alt="services image" class="services__img">
+                    </div>
+                    <div class="services__text">
+                        <h3 class="heading-tertiary">24 Hours coffeeshop</h3>
+                        <p class="paragraph">velit et imperdiet cursus, nunc massa hendrerit mi, id ultricies neque
+                            mauris at nisi</p>
+                    </div>
+                </div><!-- end of column one -->
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <div class="services__icon">
+                        <img src="img/icon-02.png" alt="services image" class="services__img">
+                    </div>
+                    <div class="services__text">
+                        <h3 class="heading-tertiary">Spciality Restaurant</h3>
+                        <p class="paragraph">velit et imperdiet cursus, nunc massa hendrerit mi, id ultricies neque
+                            mauris at nisi</p>
+                    </div>
+                </div><!-- end of column two -->
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <div class="services__icon">
+                        <img src="img/icon-03.png" alt="services image" class="services__img">
+                    </div>
+                    <div class="services__text">
+                        <h3 class="heading-tertiary">Luxurious Bar</h3>
+                        <p class="paragraph">velit et imperdiet cursus, nunc massa hendrerit mi, id ultricies neque
+                            mauris at nisi</p>
+                    </div>
+                </div><!-- end of column three -->
+            </div>
+        </div>
+    </section>
+    <!-- end of services section -->
+    <!-- menu section -->
+    <section class="menu section-padding" data-scroll-index="3">
+        <div class="container-fluid">
+            <div class="menu__content">
+                <h2 class="heading-primary">Menu List</h2>
+            </div>
+            <nav class="text-center">
+                <ul class="simplefilter filter-port menu__list">
+                    <li class="btn-boco-outline menu__item active" data-filter="all">All Menu</li>
+                    <li class="btn-boco-outline menu__item" data-filter="1">Appetizers</li>
+                    <li class="btn-boco-outline menu__item" data-filter="2">Entrées </li>
+                    <li class="btn-boco-outline menu__item" data-filter="3">Beverages</li>
+                    <li class="btn-boco-outline menu__item" data-filter="4">Desserts</li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="filtr-container">
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="1">
+                        <div class="menu__container d-flex">
+                            <div class="menu__container--img">
+                                <img src="img/menu/menu-01.jpg" alt="menu image" class="menu__img">
+                            </div>
+                            <div class="menu__container--text">
+                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$21</span></h3>
+                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
+                                    dapibus mi.</p>
+                            </div>
+                        </div>
+                    </div><!-- end of menu item one -->
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="4">
+                        <div class="menu__container d-flex">
+                            <div class="menu__container--img">
+                                <img src="img/menu/menu-02.jpg" alt="menu image" class="menu__img">
+                            </div>
+                            <div class="menu__container--text">
+                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$12</span></h3>
+                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
+                                    dapibus mi.</p>
+                            </div>
+                        </div>
+                    </div><!-- end of menu item two -->
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="3">
+                        <div class="menu__container d-flex">
+                            <div class="menu__container--img">
+                                <img src="img/menu/menu-03.jpg" alt="menu image" class="menu__img">
+                            </div>
+                            <div class="menu__container--text">
+                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$13</span></h3>
+                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
+                                    dapibus mi.</p>
+                            </div>
+                        </div>
+                    </div><!-- end of menu item three -->
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="2">
+                        <div class="menu__container d-flex">
+                            <div class="menu__container--img">
+                                <img src="img/menu/menu-04.jpg" alt="menu image" class="menu__img">
+                            </div>
+                            <div class="menu__container--text">
+                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$12</span></h3>
+                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
+                                    dapibus mi.</p>
+                            </div>
+                        </div>
+                    </div><!-- end of menu item four -->
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="2">
+                        <div class="menu__container d-flex">
+                            <div class="menu__container--img">
+                                <img src="img/menu/menu-05.jpg" alt="menu image" class="menu__img">
+                            </div>
+                            <div class="menu__container--text">
+                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$16</span></h3>
+                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
+                                    dapibus mi.</p>
+                            </div>
+                        </div>
+                    </div><!-- end of menu item five -->
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="3">
+                        <div class="menu__container d-flex">
+                            <div class="menu__container--img">
+                                <img src="img/menu/menu-06.jpg" alt="menu image" class="menu__img">
+                            </div>
+                            <div class="menu__container--text">
+                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$14</span></h3>
+                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
+                                    dapibus mi.</p>
+                            </div>
+                        </div>
+                    </div><!-- end of menu item six -->
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="1">
+                        <div class="menu__container d-flex">
+                            <div class="menu__container--img">
+                                <img src="img/menu/menu-07.jpg" alt="menu image" class="menu__img">
+                            </div>
+                            <div class="menu__container--text">
+                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$17</span></h3>
+                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
+                                    dapibus mi.</p>
+                            </div>
+                        </div>
+                    </div><!-- end of menu item seven -->
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="4">
+                        <div class="menu__container d-flex">
+                            <div class="menu__container--img">
+                                <img src="img/menu/menu-08.jpg" alt="menu image" class="menu__img">
+                            </div>
+                            <div class="menu__container--text">
+                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$19</span></h3>
+                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
+                                    dapibus mi.</p>
+                            </div>
+                        </div>
+                    </div><!-- end of menu item eight -->
+                </div>
+            </div><!-- end of filter container -->
+        </div>
+    </section>
+    <!-- end of menu section -->
+    <!-- video background -->
+    <section class="vid-bg">
+        <div class="fullscreen-video-wrap">
+            <video src="media/vid-bg.mp4" autoplay loop muted></video>
+        </div>
+        <div class="vid-bg__content">
+            <h2 class="heading-primary">World class Luxury Interiors</h2>
+        </div>
+    </section>
+    <!-- end of video background sction -->
+    <!-- gallery section -->
+    <section class="gallery" data-scroll-index="4">
+        <div class="gallery__one">
+            <div class="gallery__overlay">
+                <div class="section-padding">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 gallery__content">
+                                <h2 class="heading-primary mb-5">Indian cuisine</h2>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of section-padding -->
+            </div><!-- end of gallery overlay -->
+        </div><!-- end of gallery one -->
+        <div class="gallery__two">
+            <div class="gallery__overlay">
+                <div class="section-padding">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="offset-md-6 col-md-6 col-sm-12 gallery__content">
+                                <h2 class="heading-primary mb-5">French cuisine</h2>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of section-padding -->
+            </div><!-- end of gallery overlay -->
+        </div><!-- end of gallery two -->
+        <div class="gallery__three">
+            <div class="gallery__overlay">
+                <div class="section-padding">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 gallery__content">
+                                <h2 class="heading-primary mb-5">American cuisine</h2>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of section-padding -->
+            </div><!-- end of gallery overlay -->
+        </div><!-- end of gallery three -->
+        <div class="gallery__four">
+            <div class="gallery__overlay">
+                <div class="section-padding">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="offset-md-6 col-md-6 col-sm-12 gallery__content">
+                                <h2 class="heading-primary mb-5">Japanese cuisine</h2>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of section-padding -->
+            </div><!-- end of gallery overlay -->
+        </div><!-- end of gallery four -->
+        <div class="gallery__five">
+            <div class="gallery__overlay">
+                <div class="section-padding">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 gallery__content">
+                                <h2 class="heading-primary mb-5">Delicious Desserts</h2>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of section-padding -->
+            </div><!-- end of gallery overlay -->
+        </div><!-- end of gallery five -->
+        <div class="gallery__six">
+            <div class="gallery__overlay">
+                <div class="section-padding">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="offset-md-6 col-md-6 col-sm-12 gallery__content">
+                                <h2 class="heading-primary mb-5">Smokey Barbecue</h2>
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+
+                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
+                                    nisl
+                                    nisi nec nisl.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of section-padding -->
+            </div><!-- end of gallery overlay -->
+        </div><!-- end of gallery six -->
+    </section>
+    <!-- end of gallery section -->
+    <!-- chefs section -->
+    <section class="chefs section-padding" data-scroll-index="5">
+        <div class="container">
+            <h2 class="heading-primary text-center mb-5">Our Chefs</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <figure class="chefs__content">
+                        <img src="img/team-01.jpg" alt="chef's image" class="chefs__img">
+                        <figcaption>
+                            <p class="heading-tag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                asperiores mollitia.
+                            </p>
+                            <ul class="chefs__list">
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                    <h3 class="heading-tertiary text-center">Name of the person</h3>
+                </div>
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <figure class="chefs__content">
+                        <img src="img/team-02.jpg" alt="chef's image" class="chefs__img">
+                        <figcaption>
+                            <p class="heading-tag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                asperiores mollitia.
+                            </p>
+                            <ul class="chefs__list">
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                    <h3 class="heading-tertiary text-center">Name of the person</h3>
+                </div>
+                <div class="col-md-4 col-sm-6 mx-auto">
+                    <figure class="chefs__content">
+                        <img src="img/team-03.jpg" alt="chef's image" class="chefs__img">
+                        <figcaption>
+                            <p class="heading-tag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                asperiores mollitia.
+                            </p>
+                            <ul class="chefs__list">
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                    <h3 class="heading-tertiary text-center">Name of the person</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of chefs section -->
+    <!-- contact section -->
+    <section class="contact section-padding" data-scroll-index="6">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-10 mx-auto">
+                    <img src="img/dining-02.png" alt="contact image" class="contact__img">
+                </div>
+                <div class="col-md-6 col-sm-10 mx-auto align-self-center">
+                    <h2 class="heading-tertiary mb-3">Have a question? Contact Us Today</h2>
+                    <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()"
+                        method="" role="form">
+
+                        <div class="form-group">
+                            <label class="form-label" id="nameLabel" for="name"></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name"
+                                tabindex="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" id="emailLabel" for="email"></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                                tabindex="2">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" id="subjectLabel" for="sublect"></label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                                tabindex="3">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" id="messageLabel" for="message"></label>
+                            <textarea rows="4" cols="60" name="message" class="form-control" id="message"
+                                placeholder="Your message" tabindex="4"></textarea>
+                        </div>
+
+                        <div class="text-center margin-top-25">
+                            <button type="submit" class="btn-boco">Send Message</button>
+                        </div>
+                    </form><!-- End form -->
+                </div>
+                <iframe class="mt-5 mb-5" width="100%" height="300"
+                    src="https://maps.google.com/maps?q=chennai%20restaurants&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- end of contact section -->
+
+    <!-- footer section -->
+    <footer class="footer">
+        <!--Footer main container-->
+        <div class="container">
+            <div class="footer__main">
+                <div class="row">
+                    <!-- column one -->
+                    <div class="col-md-4 col-sm-12 mx-auto">
+                        <div class="footer__main--content">
+                            <!-- Hotel chain group details -->
+                            <h6 class="heading-quaternary">BOCO Multicusine Restaurant</h6>
+                            <p class="footer__main--text">Vestibulum eleifend lacinia felis eget laoreet. Ut egestas,
+                                diam non efficitur accumsan, orci sem blandit risus, sed auctor orci ante in ligula.
+                                Mauris ac scelerisque turpis. </p>
+                            <div class="footer__main--copy">
+                                &copy; BOCO Restaurant, All Rights Reserved | Designed by <a
+                                    href="https://gecdesigns.com/" target="_blank"><u>GEC Designs</u></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column two links -->
+                    <div class="col-md-4 col-sm-12 mx-auto">
+                        <div class="footer__main--content">
+                            <h6 class="heading-quaternary">Quick Links</h6>
+                            <ul>
+                                <li class="footer__main--link">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <span>Home Page - BOCO Restaurants</span>
+                                    </a>
+                                </li>
+
+                                <li class="footer__main--link">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <span>Events - Latest News</span>
+                                    </a>
+                                </li>
+
+                                <li class="footer__main--link">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <span>Offers - Updates</span>
+                                    </a>
+                                </li>
+
+                                <li class="footer__main--link">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+
+                                <li class="footer__main--link">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <span>Privacy Policy</span>
+                                    </a>
+                                </li>
+
+                                <li class="footer__main--link">
+                                    <a href="javascript:;">
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <span>Terms &amp; Conditions </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- column three Subscribtion form -->
+                    <div class="col-md-4 col-sm-12 mx-auto">
+                        <div class="footer__main--content">
+                            <h6 class="heading-quaternary">Newsletters &amp; Offers </h6>
+                            <p class="footer__main--text">We send you monthly newsletters with the information on
+                                upcoming events & availabel special offers.
+                            </p>
+                            <form action="javascript:;">
+                                <input class="footer__form" type="email" name="email" placeholder="Email Address">
+                                <button class="btn__cta">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Footer main container-->
+        <div class="footer-end text-center">
+            <div class="social">
+                <ul class="social__list">
+                    <li class="social__item"><a href="javascript:;"><i class="fa fa-facebook-official"></i></a></li>
+                    <li class="social__item"><a href="javascript:;"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li class="social__item"><a href="javascript:;"><i class="fa fa-pinterest-square"></i></a></li>
+                    <li class="social__item"><a href="javascript:;"><i class="fa fa-twitter-square"></i></a></li>
+                    <li class="social__item"><a href="javascript:;"><i class="fa fa-youtube-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer section-->
+
+    <!-- preloader section -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!--jquery-3.3.1 js-->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Particles Js -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- filter js -->
+    <script src="js/jquery.filterizr.min.js"></script>
+
+    <!-- Scroll It JS -->
+    <script src="js/scrollIt.min.js"></script>
+
+    <!-- Waypoints JS -->
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- coustom js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
