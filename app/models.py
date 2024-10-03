@@ -15,7 +15,7 @@ class Reservation(models.Model):
     number_of_people = models.CharField(max_length=20, choices=CHOICES_BOX)
     
     def __str__(self):
-        self.name
+        return self.name
     
     
 class Chef(models.Model):

@@ -6,6 +6,8 @@ from django.contrib import messages
 def index(request):
     galleries = Gallery.objects.all()
     chefs = Chef.objects.all()
+    reserve_form = ReservationForm()
+    contact_form = ContactForm()
     if request.method == 'GET':
         reserve_form = ReservationForm(request.GET)
         if reserve_form.is_valid():
@@ -25,5 +27,7 @@ def index(request):
     context = {
         'galleries' : galleries,
         'chefs' : chefs,
+        'reserve_form' : reserve_form,
+        'contact_form' : contact_form
     }
     return render(request, 'index.html',  context)
