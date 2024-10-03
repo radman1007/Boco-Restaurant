@@ -6,7 +6,7 @@ class Reservation(models.Model):
         '2' : '2',
         '3' : '3',
         '4' : '4',
-        'ABOVE 4 UPTO 10' : 'Above 4 upto 10',
+        'Above 4 upto 10' : 'Above 4 upto 10',
     }
     name = models.CharField(max_length=50)
     phone = models.CharField(max_length=12)
