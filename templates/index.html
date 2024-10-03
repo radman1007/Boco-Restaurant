@@ -347,13 +347,12 @@
         <div class="container">
             <h2 class="heading-primary text-center mb-5">Our Chefs</h2>
             <div class="row">
+                {% for chef in chefs %}
                 <div class="col-md-4 col-sm-6 mx-auto">
                     <figure class="chefs__content">
-                        <img src="{% static "img/team-01.jpg" %}" alt="chef's image" class="chefs__img">
+                        <img src="{{ chef.image.url }}" alt="chef's image" class="chefs__img">
                         <figcaption>
-                            <p class="heading-tag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                asperiores mollitia.
-                            </p>
+                            <p class="heading-tag">{{ chef.description }}</p>
                             <ul class="chefs__list">
                                 <li class="chefs__item"><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
                                 <li class="chefs__item"><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
@@ -361,40 +360,9 @@
                             </ul>
                         </figcaption>
                     </figure>
-                    <h3 class="heading-tertiary text-center">Name of the person</h3>
+                    <h3 class="heading-tertiary text-center">{{ chef.name }}</h3>
                 </div>
-                <div class="col-md-4 col-sm-6 mx-auto">
-                    <figure class="chefs__content">
-                        <img src="{% static "img/team-02.jpg" %}" alt="chef's image" class="chefs__img">
-                        <figcaption>
-                            <p class="heading-tag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                asperiores mollitia.
-                            </p>
-                            <ul class="chefs__list">
-                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <h3 class="heading-tertiary text-center">Name of the person</h3>
-                </div>
-                <div class="col-md-4 col-sm-6 mx-auto">
-                    <figure class="chefs__content">
-                        <img src="{% static "img/team-03.jpg" %}" alt="chef's image" class="chefs__img">
-                        <figcaption>
-                            <p class="heading-tag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-                                asperiores mollitia.
-                            </p>
-                            <ul class="chefs__list">
-                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
-                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-                                <li class="chefs__item"><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <h3 class="heading-tertiary text-center">Name of the person</h3>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
