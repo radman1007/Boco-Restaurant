@@ -35,3 +35,12 @@ class Contact(models.Model):
     
     def __str__(self):
         return self.name
+    
+    
+class Gallery(models.Model):
+    image = models.ImageField()
+    title = models.CharField(100)
+    test = models.TextField()
+    
+    def __str__(self):
+        return self.title
