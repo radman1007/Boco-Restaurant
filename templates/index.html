@@ -211,103 +211,19 @@
             </nav>
             <div class="row">
                 <div class="filtr-container">
-                    
-                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="1">
+                    {% for menu in menus %}
+                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="{{ menu.category }}">
                         <div class="menu__container d-flex">
                             <div class="menu__container--img">
-                                <img src="{% static "img/menu/menu-01.jpg" %}" alt="menu image" class="menu__img">
+                                <img src="{{ menu.image.url }}" alt="menu image" class="menu__img">
                             </div>
                             <div class="menu__container--text">
-                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$21</span></h3>
-                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
-                                    dapibus mi.</p>
+                                <h3 class="heading-tertiary">{{ menu.title }}<span class="pull-right">${{ menu.price }}</span></h3>
+                                <p class="heading-tag">{{ menu.description }}</p>
                             </div>
                         </div>
-                    </div><!-- end of menu item one -->
-                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="4">
-                        <div class="menu__container d-flex">
-                            <div class="menu__container--img">
-                                <img src="{% static "img/menu/menu-02.jpg" %}" alt="menu image" class="menu__img">
-                            </div>
-                            <div class="menu__container--text">
-                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$12</span></h3>
-                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
-                                    dapibus mi.</p>
-                            </div>
-                        </div>
-                    </div><!-- end of menu item two -->
-                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="3">
-                        <div class="menu__container d-flex">
-                            <div class="menu__container--img">
-                                <img src="{% static "img/menu/menu-03.jpg" %}" alt="menu image" class="menu__img">
-                            </div>
-                            <div class="menu__container--text">
-                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$13</span></h3>
-                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
-                                    dapibus mi.</p>
-                            </div>
-                        </div>
-                    </div><!-- end of menu item three -->
-                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="2">
-                        <div class="menu__container d-flex">
-                            <div class="menu__container--img">
-                                <img src="{% static "img/menu/menu-04.jpg" %}" alt="menu image" class="menu__img">
-                            </div>
-                            <div class="menu__container--text">
-                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$12</span></h3>
-                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
-                                    dapibus mi.</p>
-                            </div>
-                        </div>
-                    </div><!-- end of menu item four -->
-                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="2">
-                        <div class="menu__container d-flex">
-                            <div class="menu__container--img">
-                                <img src="{% static "img/menu/menu-05.jpg" %}" alt="menu image" class="menu__img">
-                            </div>
-                            <div class="menu__container--text">
-                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$16</span></h3>
-                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
-                                    dapibus mi.</p>
-                            </div>
-                        </div>
-                    </div><!-- end of menu item five -->
-                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="3">
-                        <div class="menu__container d-flex">
-                            <div class="menu__container--img">
-                                <img src="{% static "img/menu/menu-06.jpg" %}" alt="menu image" class="menu__img">
-                            </div>
-                            <div class="menu__container--text">
-                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$14</span></h3>
-                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
-                                    dapibus mi.</p>
-                            </div>
-                        </div>
-                    </div><!-- end of menu item six -->
-                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="1">
-                        <div class="menu__container d-flex">
-                            <div class="menu__container--img">
-                                <img src="{% static "img/menu/menu-07.jpg" %}" alt="menu image" class="menu__img">
-                            </div>
-                            <div class="menu__container--text">
-                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$17</span></h3>
-                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
-                                    dapibus mi.</p>
-                            </div>
-                        </div>
-                    </div><!-- end of menu item seven -->
-                    <div class="col-md-6 col-sm-10 mx-auto filtr-item" data-category="4">
-                        <div class="menu__container d-flex">
-                            <div class="menu__container--img">
-                                <img src="{% static "img/menu/menu-08.jpg" %}" alt="menu image" class="menu__img">
-                            </div>
-                            <div class="menu__container--text">
-                                <h3 class="heading-tertiary">Dish name <span class="pull-right">$19</span></h3>
-                                <p class="heading-tag">Duis dapibus nisl vitae ante scelerisque tristique. Nunc vitae
-                                    dapibus mi.</p>
-                            </div>
-                        </div>
-                    </div><!-- end of menu item eight -->
+                    </div>
+                    {% endfor %}
                 </div>
             </div><!-- end of filter container -->
         </div>

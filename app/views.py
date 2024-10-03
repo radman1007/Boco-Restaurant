@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
-from .models import Gallery, Chef
+from .models import Gallery, Chef, Menu
 from .forms import ContactForm , ReservationForm
 from django.contrib import messages
 
 def index(request):
     galleries = Gallery.objects.all()
     chefs = Chef.objects.all()
+    menus = Menu.objects.all()
     reserve_form = ReservationForm()
     contact_form = ContactForm()
     if request.method == 'GET':
@@ -27,6 +28,7 @@ def index(request):
     context = {
         'galleries' : galleries,
         'chefs' : chefs,
+        'menus' : menus,
         'reserve_form' : reserve_form,
         'contact_form' : contact_form
     }

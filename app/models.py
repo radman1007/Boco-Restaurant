@@ -49,13 +49,13 @@ class Gallery(models.Model):
 
 class Menu(models.Model):
     CHOICES_BOX = {
-        '1' : '1',
-        '2' : '2',
-        '3' : '3',
-        '4' : '4',
+        '1' : 'Appetizers',
+        '2' : 'Entrées',
+        '3' : 'Beverages',
+        '4' : 'Desserts',
     }
     image = models.ImageField()
     title = models.CharField(max_length=100)
     description = models.TextField()
     price = models.PositiveIntegerField()
-    category = models.CharField(max_length=2, choices=CHOICES_BOX)
+    category = models.CharField(max_length=1, choices=CHOICES_BOX)

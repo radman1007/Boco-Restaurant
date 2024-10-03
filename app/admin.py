@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Reservation, Chef, Contact, Gallery
+from .models import Reservation, Chef, Contact, Gallery, Menu
 
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
@@ -20,3 +20,9 @@ class ContactAdmin(admin.ModelAdmin):
 @admin.register(Gallery)
 class GalleryAdmin(admin.ModelAdmin):
     list_display = ('title', 'text')
+
+
+@admin.register(Menu)
+class MenuAdmin(admin.ModelAdmin):
+    list_display = ('title', 'price', 'category')
+    ordering = ('category',)
