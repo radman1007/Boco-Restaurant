@@ -324,138 +324,22 @@
     <!-- end of video background sction -->
     <!-- gallery section -->
     <section class="gallery" data-scroll-index="4">
-        <div class="gallery__one">
-            <div class="gallery__overlay">
-                <div class="section-padding">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 gallery__content">
-                                <h2 class="heading-primary mb-5">Indian cuisine</h2>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
+        {% for gallery in galleries %}
+            <div class="gallery__{{ gallery.number }}">
+                <div class="gallery__overlay">
+                    <div class="section-padding">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 gallery__content">
+                                    <h2 class="heading-primary mb-5">{{ gallery.title }}</h2>
+                                    <p class="paragraph">{{ gallery.text|linebreaks }}</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div><!-- end of section-padding -->
-            </div><!-- end of gallery overlay -->
-        </div><!-- end of gallery one -->
-        <div class="gallery__two">
-            <div class="gallery__overlay">
-                <div class="section-padding">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="offset-md-6 col-md-6 col-sm-12 gallery__content">
-                                <h2 class="heading-primary mb-5">French cuisine</h2>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- end of section-padding -->
-            </div><!-- end of gallery overlay -->
-        </div><!-- end of gallery two -->
-        <div class="gallery__three">
-            <div class="gallery__overlay">
-                <div class="section-padding">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 gallery__content">
-                                <h2 class="heading-primary mb-5">American cuisine</h2>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- end of section-padding -->
-            </div><!-- end of gallery overlay -->
-        </div><!-- end of gallery three -->
-        <div class="gallery__four">
-            <div class="gallery__overlay">
-                <div class="section-padding">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="offset-md-6 col-md-6 col-sm-12 gallery__content">
-                                <h2 class="heading-primary mb-5">Japanese cuisine</h2>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- end of section-padding -->
-            </div><!-- end of gallery overlay -->
-        </div><!-- end of gallery four -->
-        <div class="gallery__five">
-            <div class="gallery__overlay">
-                <div class="section-padding">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 gallery__content">
-                                <h2 class="heading-primary mb-5">Delicious Desserts</h2>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- end of section-padding -->
-            </div><!-- end of gallery overlay -->
-        </div><!-- end of gallery five -->
-        <div class="gallery__six">
-            <div class="gallery__overlay">
-                <div class="section-padding">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="offset-md-6 col-md-6 col-sm-12 gallery__content">
-                                <h2 class="heading-primary mb-5">Smokey Barbecue</h2>
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-
-                                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                                    malesuada, sapien a tincidunt consectetur, erat purus lacinia erat, sit amet porta
-                                    nisl
-                                    nisi nec nisl.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- end of section-padding -->
-            </div><!-- end of gallery overlay -->
-        </div><!-- end of gallery six -->
+                    </div><!-- end of section-padding -->
+                </div><!-- end of gallery overlay -->
+            </div>
+        {% endfor %}
     </section>
     <!-- end of gallery section -->
     <!-- chefs section -->
