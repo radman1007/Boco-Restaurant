@@ -39,7 +39,7 @@ class Contact(models.Model):
     
 class Gallery(models.Model):
     image = models.ImageField()
-    title = models.CharField(100)
+    title = models.CharField(max_length=100)
     test = models.TextField()
     
     def __str__(self):
