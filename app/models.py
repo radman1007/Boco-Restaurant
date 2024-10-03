@@ -14,3 +14,4 @@ class Reservation(models.Model):
     meal = models.CharField(max_length=11)
     number_of_people = models.CharField(max_length=20, choices=CHOICES_BOX)
     
+    
