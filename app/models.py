@@ -15,3 +15,7 @@ class Reservation(models.Model):
     number_of_people = models.CharField(max_length=20, choices=CHOICES_BOX)
     
     
+class Chef(models.Model):
+    name = models.CharField(max_length=50)
+    image = models.ImageField()
+    description = models.TextField()
