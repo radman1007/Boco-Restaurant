@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Reservation, Chef
+from .models import Reservation, Chef, Contact
 
 @admin.register(Reservation)
 class ReservationAdmin(admin.ModelAdmin):
@@ -10,3 +10,8 @@ class ReservationAdmin(admin.ModelAdmin):
 @admin.register(Chef)
 class ChefAdmin(admin.ModelAdmin):
     list_display = ('name', 'description')
+
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name', 'subject', 'message')
